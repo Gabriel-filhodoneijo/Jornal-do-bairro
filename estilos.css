@@ -1,0 +1,78 @@
+#imagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#titulo{
+    text-align: center;
+    font-size: 60px;
+    color: #1e73be;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation-name: ping-pong;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse ;
+}
+nav ul{
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    color: #1e73be;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color:purple;
+}
+.dados{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imagens{
+    margin: 20px;
+    width: 350px;
+    height: 300px;
+    float:left;
+}
+.textos{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links{
+    font-size: 20px;
+    text-decoration: none;
+}
+.links:link{
+    color: purple;
+}
+.links:visited{
+    color: blue;
+}
+#rodape{
+    background-color: #eaeaea;
+    display: block;
+}
+.links-rodape{
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 20px ;
+}
+.links-rodape:link{
+    color:purple;
+}
+.links-rodape:visited{
+    color:#1e73be;
+}
+@keyframes ping-pong{
+    0%{
+        transform: scale(0) ;
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
